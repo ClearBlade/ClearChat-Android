@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clearblade.clearchat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.clearblade.clearchat.MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+       
+        </activity>
+
+
+        <activity
+            android:name="com.clearblade.clearchat.CreateItemActivity"
+            android:label="@string/title_activity_create_item"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+
+               <activity
+            android:name=".SetPreferenceActivity"
+            android:label="Settings" >
+        </activity>
+
+
+        <service
+            android:name="com.clearblade.platform.api.internal.MessageService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/message_service" >
+        </service>
+
+        <activity
+            android:name="com.clearblade.clearchat.Landing"
+            android:label="@string/title_activity_landing" >
+        </activity>
+        <activity
+            android:name="com.clearblade.clearchat.Splash" 
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/groupNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupNameToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Group Name"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupNameEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:onClick="search"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/searchPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Search for a group by..."
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/UserInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/groupNameTitle"
+        android:layout_alignBottom="@+id/groupNameTitle"
+        android:layout_alignRight="@+id/groupNameEditText"
+        android:layout_marginRight="44dp"
+        android:text="User Info" />
+
+    <TextView
+        android:id="@+id/groupNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchPrompt"
+        android:layout_below="@+id/searchPrompt"
+        android:layout_marginTop="17dp"
+        android:text="Group Name" />
+
+    <ToggleButton
+        android:id="@+id/groupNameToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/UserInfoTitle"
+        android:layout_below="@+id/UserInfoTitle"
+        android:text="ToggleButton" />
+
+    <ToggleButton
+        android:id="@+id/userInfoToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_above="@+id/groupNameEditText"
+        android:layout_alignLeft="@+id/groupNameTitle"
+        android:text="ToggleButton" />
+
+</RelativeLayout>

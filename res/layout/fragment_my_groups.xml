@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+       <Button
+           android:id="@+id/joinButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="18dp"
+           android:layout_marginRight="21dp"
+           android:onClick="joinGroup"
+           android:text="Join" />
+
+       <Button
+           android:id="@+id/createButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/joinButton"
+           android:layout_alignBottom="@+id/joinButton"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="15dp"
+           android:onClick="CreateGroup"
+           android:text="Create" />
+
+</RelativeLayout>

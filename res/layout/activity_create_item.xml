@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.clearblade.clearchat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateItemActivity" >
+
+    <EditText
+        android:id="@+id/firstEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/prompt"
+        android:ems="10"
+        android:hint="Username" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/createItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstEditText"
+        android:layout_marginTop="16dp"
+        android:onClick="createItem"
+        android:text="Join!" />
+
+    <TextView
+        android:id="@+id/resultCreateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/createItemButton"
+        android:layout_marginTop="26dp"
+        android:text="..." />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:text="Create a username"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="35dp"
+        android:text="ClearChat"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <com.clearblade.clearchat.ProgressWheel
+        android:id="@+id/progressBarTwo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/firstEditText"
+        android:layout_centerHorizontal="true"
+        ProgressWheel:barColor="#339BB9"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="25dp"
+        ProgressWheel:rimColor="#44000000"
+        ProgressWheel:rimWidth="25dp"
+        ProgressWheel:spinSpeed="3dp"
+        ProgressWheel:text="Registering..."
+        ProgressWheel:textColor="#222222"
+        ProgressWheel:textSize="14sp" />
+
+</RelativeLayout>

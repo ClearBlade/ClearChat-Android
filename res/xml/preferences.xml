@@ -1,0 +1,25 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Settings">
+
+        <CheckBoxPreference
+                android:key="checkbox_preference"
+                android:title="Notifications"
+                android:summary="Notifications of new messages" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="About">
+
+        <Preference
+                android:key="text_preference"
+                android:title="Version"
+                android:summary="0.0.9"
+                 />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
