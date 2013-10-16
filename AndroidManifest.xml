@@ -24,7 +24,7 @@
 
 
         <activity
-            android:name="com.clearblade.clearchat.CreateItemActivity"
+            android:name="com.clearblade.clearchat.JoinActivity"
             android:label="@string/title_activity_create_item"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>

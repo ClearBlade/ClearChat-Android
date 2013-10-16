@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void initializePlatform(View view){
-		Intent intent = new Intent(this, CreateItemActivity.class);
+		Intent intent = new Intent(this, JoinActivity.class);
 		
 		intent.putExtra(APIKEY, APIKEY);
 		intent.putExtra(APISECRET, APISECRET);

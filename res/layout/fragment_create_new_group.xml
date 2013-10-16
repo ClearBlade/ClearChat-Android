@@ -28,12 +28,11 @@
         android:hint="Group Name" />
     
         <Button
-        android:id="@+id/subscribeButton"
+        android:id="@+id/createGroupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/groupNameEditText"
         android:layout_centerHorizontal="true"
-        android:onClick="createGroup"
         android:text="Create" />
 
    

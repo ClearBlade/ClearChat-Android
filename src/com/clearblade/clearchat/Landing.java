@@ -99,5 +99,10 @@ public class Landing extends FragmentActivity {
     	
 
     	 }
+   /* 
+	public void createGroup(View view) {
+		//do nothing
+		
+	}*/
  
 }
