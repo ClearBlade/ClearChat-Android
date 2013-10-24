@@ -20,7 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
  
-public class CreateGroupFragment extends Fragment{
+public class FindUsersFragment extends Fragment{
 	ProgressWheel pw_two;
  
     public static Fragment newInstance(Context context) {
@@ -30,7 +30,7 @@ public class CreateGroupFragment extends Fragment{
  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-    	View view = inflater.inflate(R.layout.fragment_create_new_group, container, false);
+    	View view = inflater.inflate(R.layout.fragment_find_users, container, false);
     	pw_two = (ProgressWheel) view.findViewById(R.id.progressBarTwo);
   		pw_two.setVisibility(4);
   		pw_two.setVisibility(View.GONE);

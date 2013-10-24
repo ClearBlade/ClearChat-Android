@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="148dp"
         android:layout_marginBottom="15dp"
-        android:text="Please name your new group" />
+        android:text="Subscribe to a group" />
 
     <EditText
         android:id="@+id/groupNameEditText"
@@ -29,13 +29,13 @@
         android:hint="Group Name" />
     
         <Button
-        android:id="@+id/createGroupButton"
+        android:id="@+id/subscribeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/groupNameEditText"
         android:layout_centerHorizontal="true"
         android:onClick="createGroup"
-        android:text="Create" />
+        android:text="Subscribe" />
 
             <com.clearblade.clearchat.ProgressWheel
                 android:id="@+id/progressBarTwo"

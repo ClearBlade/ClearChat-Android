@@ -1,5 +1,6 @@
 package com.clearblade.clearchat;
 
+import com.clearblade.platform.api.AbstractMessageCallback;
 import com.clearblade.platform.api.ClearBladeException;
 import com.clearblade.platform.api.DataCallback;
 import com.clearblade.platform.api.Item;
@@ -20,8 +21,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
  
-public class CreateGroupFragment extends Fragment{
-	ProgressWheel pw_two;
+public class ChatFragment extends Fragment{
+	//ProgressWheel pw_two;
  
     public static Fragment newInstance(Context context) {
         MainFragment f = new MainFragment();
@@ -30,11 +31,15 @@ public class CreateGroupFragment extends Fragment{
  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-    	View view = inflater.inflate(R.layout.fragment_create_new_group, container, false);
-    	pw_two = (ProgressWheel) view.findViewById(R.id.progressBarTwo);
-  		pw_two.setVisibility(4);
-  		pw_two.setVisibility(View.GONE);
+    	View view = inflater.inflate(R.layout.fragment_chat, container, false);
+    	//pw_two = (ProgressWheel) view.findViewById(R.id.progressBarTwo);
+  		//pw_two.setVisibility(4);
+  		//pw_two.setVisibility(View.GONE);
+	
+    	
     	return view;
+    	
+    	
     }
     
 

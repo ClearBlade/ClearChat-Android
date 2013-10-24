@@ -76,7 +76,7 @@
         android:layout_alignLeft="@+id/groupNameTitle"
         android:text="ToggleButton" />
     
-     <com.clearblade.clearchat.ProgressWheel
+    <com.clearblade.clearchat.ProgressWheel
                 android:id="@+id/progressBarTwo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"

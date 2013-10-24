@@ -13,7 +13,7 @@
            android:layout_alignParentRight="true"
            android:layout_marginBottom="18dp"
            android:layout_marginRight="21dp"
-           android:onClick="joinGroup"
+           android:onClick="chat"
            android:text="Join" />
 
        <Button
@@ -26,5 +26,15 @@
            android:layout_marginLeft="15dp"
            android:onClick="CreateGroup"
            android:text="Create" />
+
+       <ListView
+           android:id="@+id/listViewFromDB"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/joinButton"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true" >
+
+       </ListView>
 
 </RelativeLayout>
