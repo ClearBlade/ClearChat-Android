@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClearChat</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- main activity strings -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="username">Username</string>
+    <string name="button_login">Login</string>
+
+    <!-- group activity strings -->
+    <string name="title_activity_groups">ClearChat</string>
+    <string name="groupwelcome">Welcome user</string>
+    <string name="createheader">Create a Group</string>
+    <string name="groupname">Groupname</string>
+    <string name="groupcreate">Create Group</string>
+    <string name="joinheader">Current Groups</string>
+
+    <!-- chat activity strings -->
+
+    <string name="title_activity_chat">ClearChat</string>
+	<string name="chatbutton">Go</string>
+    <string name="message">message</string>
+</resources>

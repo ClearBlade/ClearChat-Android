@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/groupwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/groupwelcome"
+        android:textStyle="italic" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createheader"
+        android:textColor="#0071BC" />
+    
+    <EditText android:id="@+id/groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/groupname" />
+    
+	<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/groupcreate" 
+        android:onClick="createGroup"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/joinheader"
+        android:textColor="#0071BC" /> />
+    
+    
+    <ListView android:id="@+id/listView" 
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"/>
+
+</LinearLayout>
