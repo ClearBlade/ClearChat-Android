@@ -23,7 +23,7 @@ import com.clearblade.platform.api.Item;
 
 public class GroupsActivity extends Activity {
 
-	public static String GROUPCOLLECTIONID = "5277bd8f8ab3a37ce7f6f063";
+	public static String GROUPCOLLECTIONID = "98cad0aa0ae8f3e4f888bcdeb29701";
 	SimpleAdapter simpleAdpt;
 	// The data to show
 	List<Map<String, String>> groupList = new ArrayList<Map<String, String>>();

@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.clearblade.platform.api.AbstractMessageCallback;
+import com.clearblade.platform.api.MessageCallback;
 import com.clearblade.platform.api.ClearBladeException;
 import com.clearblade.platform.api.Message;
 
@@ -52,7 +52,7 @@ public class ChatActivity extends Activity {
 	
 	public void sendChat(View view){
 		if (!subscribed){
-			message.subscribe(groupName, new AbstractMessageCallback(){
+			message.subscribe(groupName, new MessageCallback(){
 
 				@Override
 				public void done(String topic, String messageString) {
