@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_login" 
-        android:onClick="login"/>
+        android:onClick="initCBAPI"/>
 	
     
 </LinearLayout>
