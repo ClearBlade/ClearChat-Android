@@ -32,9 +32,10 @@ public class ChatActivity extends Activity {
 		Intent intent = getIntent();
 		groupName = intent.getStringExtra("groupName");
 		userName = intent.getStringExtra("userName");
+		int qos = 2;
 		
 		if (message== null){
-			message = new Message(this);
+			message = new Message(this, qos);
 		}
 		subscribed=false;
 		
