@@ -20,6 +20,7 @@ import com.clearblade.platform.api.ClearBladeException;
 import com.clearblade.platform.api.Collection;
 import com.clearblade.platform.api.DataCallback;
 import com.clearblade.platform.api.Item;
+import com.clearblade.platform.api.QueryResponse;
 
 public class GroupsActivity extends Activity {
 
@@ -79,13 +80,17 @@ public class GroupsActivity extends Activity {
 		collection.fetchAll(new DataCallback(){
 
 			@Override
-			public void done(Item[] response) {
-				for (int i = 0; i < response.length; i++) {
+			public void done(QueryResponse response) {
+				for (int i = 0; i < response.getDataItems().length; i++) {
 					HashMap<String, String> group = new HashMap<String, String>();
-					group.put("group", response[i].getString("groupname"));
+					group.put("group", response.getDataItems()[i].getString("groupname"));
 					groupList.add(group);
 				}
 				simpleAdpt.notifyDataSetChanged();
+			}
+			@Override
+			public void error(ClearBladeException exception) {
+				super.error(exception);
 			}
 		});
 	}

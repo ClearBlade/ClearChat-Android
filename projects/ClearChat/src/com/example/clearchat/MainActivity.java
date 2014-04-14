@@ -13,6 +13,7 @@ import com.clearblade.platform.api.DataCallback;
 import com.clearblade.platform.api.InitCallback;
 import com.clearblade.platform.api.Item;
 import com.clearblade.platform.api.Query;
+import com.clearblade.platform.api.QueryResponse;
 
 public class MainActivity extends Activity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends Activity {
 	
 	public final static String SYSTEMKEY = "eac9d0aa0ae0dcd7b1e496f4ddde01";
     public final static String SYSTEMSECRET = "EAC9D0AA0AAAA886B5B4BBAFC6E701";
-    
+	
     public final static String USERCOLLECTIONID = "90cad0aa0ac8d8bf89ff8afea432";
     
 	public void initCBAPI(View view){
@@ -63,8 +64,8 @@ public class MainActivity extends Activity {
 		query.fetch(new DataCallback() {
 			
 			@Override
-			public void done(Item[] items) {
-				if (items.length>0){
+			public void done(QueryResponse resp) {
+				if (resp.getDataItems().length>0){
 					//we found the user name, so lets move to the groups activity 
 					navigateToGroups();
 				}else {
